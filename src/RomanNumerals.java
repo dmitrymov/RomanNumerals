@@ -7,16 +7,20 @@ public class RomanNumerals {
 		String ans = "";
 		while(number > 49) {
 			number -= 50;
-			ans = ans + "C";
+			ans = ans + "L";
 		}
 		while(number >= 40) {
-			number -= 5;
-			ans = ans + "XC";
+			number -= 40;
+			ans = ans + "XL";
 		}
 
 		while(number > 9) {
 			number -= 10;
 			ans = ans + "X";
+		}
+		if(number == 9) {
+			number -= 9;
+			ans = ans + "IX";
 		}
 		while(number > 4) {
 			number -= 5;
