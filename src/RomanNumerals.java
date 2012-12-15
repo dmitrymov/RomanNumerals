@@ -13,6 +13,10 @@ public class RomanNumerals {
 			number -= 5;
 			ans = ans + "V";
 		}
+		if(number == 4) {
+			number -= 4;
+			ans = ans + "IV";
+		}
 		while(number > 0) {
 			number -= 1;
 			ans = ans + "I";
