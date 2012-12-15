@@ -13,7 +13,11 @@ public class RomanNumerals {
 			number -= 5;
 			ans = ans + "V";
 		}
-		return null;
+		while(number > 0) {
+			number -= 5;
+			ans = ans + "I";
+		}
+		return ans;
 		
 	}
 	
