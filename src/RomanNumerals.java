@@ -14,7 +14,7 @@ public class RomanNumerals {
 			ans = ans + "V";
 		}
 		while(number > 0) {
-			number -= 5;
+			number -= 1;
 			ans = ans + "I";
 		}
 		return ans;
